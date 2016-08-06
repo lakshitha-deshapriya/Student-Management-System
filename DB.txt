@@ -1,0 +1,23 @@
+drop database SMS;
+create database SMS;
+use SMS;
+create table login (
+username varchar(100),
+password varchar(100),
+usertype varchar(100),
+primary key(username)
+);
+
+insert into login values('lakshitha','namikaze','admin');
+
+create table studentDetails(
+studID int,
+fname varchar(100),
+lname varchar(100),
+gender varchar(100),
+regdate date,
+mobile varchar(100),
+primary key(studID)
+);
+
+
